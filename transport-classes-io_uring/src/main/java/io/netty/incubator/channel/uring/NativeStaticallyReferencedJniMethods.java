@@ -71,6 +71,8 @@ final class NativeStaticallyReferencedJniMethods {
     static native byte ioringOpAccept();
     static native byte ioringOpRead();
     static native byte ioringOpWrite();
+    static native byte ioringOpRecv();
+    static native byte ioringOpSend();
     static native byte ioringOpConnect();
     static native byte ioringOpClose();
     static native byte ioringOpSendmsg();
@@ -78,6 +80,8 @@ final class NativeStaticallyReferencedJniMethods {
     static native int ioringEnterGetevents();
     static native int iosqeAsync();
     static native int msgDontwait();
+    static native int msgFastopen();
+
     static native int cmsgSpace();
     static native int cmsgLen();
     static native int solUdp();
